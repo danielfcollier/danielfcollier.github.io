@@ -1,5 +1,5 @@
 DefaultContentLanguage = "en"
-baseURL = "https://danielfcollier.github.io"
+baseURL = "https://danielfcollier.github.io/"
 enableEmoji = true
 enableRobotsTXT = true
 languageCode = "en"
