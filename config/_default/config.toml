@@ -1,0 +1,57 @@
+DefaultContentLanguage = "en"
+baseURL = "https://danielfcollier.github.io"
+enableEmoji = true
+enableRobotsTXT = true
+languageCode = "en"
+summarylength = 10
+theme = "anatole"
+title = "Website of Daniel Collier"
+
+# Enable Disqus
+disqusShortname = "disqus_jgac8pYrA0"
+
+# Google Analytics
+#googleAnalytics = "UA-96263403-9"
+
+# Syntax highlighting
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsUseClasses = true
+
+[Params]
+profilePicture = "images/profile.png"
+
+[menu]
+[[menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 100
+
+[[menu.main]]
+identifier = "posts"
+name = "Posts"
+url = "/post/"
+weight = 200
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 300
+
+[[menu.main]]
+identifier = "contact"
+name = "Contact"
+url = "/contact/"
+weight = 400
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
+[taxonomies]
+category = "categories"
+series = "series"
+tag = "tags"

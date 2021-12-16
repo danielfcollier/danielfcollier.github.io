@@ -1,0 +1,44 @@
+author = "Daniel Collier"
+description = '''
+Software Engineer
+🖖🏼🌵🤖🦴🌻🍻🥋🇧🇷🇬🇧
+BSc, MSc, and ~PhD in Electrical Engineering
+Passionate about Education, People, and Technology
+'''
+displayMode = "dark"
+googleFonts = [
+  "Roboto:ital,wght@0,100;0,400;0,700;1,400",
+]
+mainSections = ["post", "docs"]
+profilePicture = "images/profile.png"
+readMore = true
+title = "Daniel Collier"
+#contactFormAction = "https://formspree.io/f/your-form-hash-here"
+
+[[socialIcons]]
+
+[math]
+enable = false # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
+use = "katex" # options: "katex", "mathjax". default is "katex".
+
+## Social links
+# use 'fab' when brand icons, use 'fas' when standard solid icons.
+[[socialIcons]]
+icon = "fab fa-github"
+title = "GitHub"
+url = "https://github.com/danielfcollier/"
+
+[[socialIcons]]
+icon = "fab fa-gitlab"
+title = "GitLab"
+url = "https://gitlab.com/danielfcollier/"
+
+[[socialIcons]]
+icon = "fab fa-linkedin"
+title = "Linkedin"
+url = "https://linkedin.com/in/danielfcollier/"
+
+[[socialIcons]]
+icon = "fas fa-envelope"
+title = "e-mail"
+url = "mailto:danielfcollier@gmail.com"
