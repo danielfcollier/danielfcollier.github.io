@@ -8,8 +8,9 @@ Categories: [git]
 DisableComments: false
 ---
 
-# Projects with Contributions
-- 
+# Projects with my contributions
+
+- API Dev Tools: [_JSON Schema $Ref Parser_](https://github.com/APIDevTools/json-schema-ref-parser)
 
 # GitHub Flow
 
@@ -53,7 +54,8 @@ git push --set-upstream origin <feature-branch>
 
 ## Make a PR
 
-Once the `<feature-branch>`  is completed, go to the original forked repository and create a "New Pull Request" - specify the forked repository and the feature branch. Add notes to enrich the PR to increase the acceptance, and go along with required changes by the maintainer(s) of the project.
+Once the `<feature-branch>` is completed, go to the original forked repository and create a "New Pull Request" - specify the forked repository and the feature branch. Add notes to enrich the PR to increase the acceptance, and go along with required changes by the maintainer(s) of the project.
 
 # References:
+
 - https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github
