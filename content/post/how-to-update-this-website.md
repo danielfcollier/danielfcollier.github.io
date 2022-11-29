@@ -3,7 +3,7 @@ title: "How to Update This Website"
 date: 2021-01-21T19:29:47-03:00
 Description: ""
 Summary: "A cookbook to install, build, and update this website."
-Tags: [cli, hugo]
+Tags: [hugo]
 Categories: [website]
 DisableComments: false
 ---
@@ -11,16 +11,19 @@ DisableComments: false
 # Installation
 
 ## On Fedora
+
 ```bash
 sudo dnf install hugo
 ```
 
 ## Git
+
 ```bash
 git clone https://github.com/danielfcollier/danielfcollier.github.io.git
 ```
 
 ## Update submodules
+
 ```bash
 git submodule init
 git submodule update
@@ -29,28 +32,32 @@ git submodule update
 # Updating
 
 ## Update theme installation
+
 ```bash
 git submodule update --remote --merge
 ```
 
-## Adding content
+## Adding a new post
+
 ```bash
 hugo new post/my-new-post.md
 ```
 
 # Build
+
 ```bash
 hugo -D
 ```
 
 ## Start server
+
 ```bash
 hugo server -D
 ```
 
 # Deploy
 
-On pushing to the *main* branch a GitHub action will take place to deploy to GitHub Pages.
+On pushing to the `main` branch a GitHub action will take place to deploy to GitHub Pages.
 
 # About Hugo
 
@@ -73,5 +80,6 @@ Websites built with Hugo are extremelly fast, secure and can be deployed anywher
 Learn more and contribute on [GitHub](https://github.com/gohugoio).
 
 # References
+
 - https://gohugo.io/
 - https://github.com/lxndrblz/anatole
