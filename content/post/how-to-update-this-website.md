@@ -43,6 +43,12 @@ git submodule update --remote --merge
 hugo new post/my-new-post.md
 ```
 
+## List drafts
+
+```bash
+hugo list drafts
+```
+
 # Build
 
 ```bash
