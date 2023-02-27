@@ -19,5 +19,18 @@ openssl pkcs12 -in <digital-signature.pfx> -out ca.pem -nodes -legacy -cacerts
 ## Bundle with New Password
 
 ```bash
-openssl pkcs12 -export -out domain.name.pfx -inkey domain.name.key -in domain.name.crt
+openssl pkcs12 -in certificado_000001011426842.pfx  -out certificates.crt -nodes -legacy
 ``
+
+File with new password:
+
+```bash
+openssl pkcs12 -export -in certificates.crt  -out certificate.pfx
+```
+
+
+## View file
+
+```bash
+openssl pkcs12 -info -in certificate.pfx -nodes -legacy
+``` 
