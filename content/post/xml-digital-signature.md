@@ -20,12 +20,12 @@ openssl pkcs12 -in <digital-signature.pfx> -out ca.pem -nodes -legacy -cacerts
 
 ```bash
 openssl pkcs12 -in certificado_000001011426842.pfx  -out certificates.crt -nodes -legacy
-``
+```
 
 File with new password:
 
 ```bash
-openssl pkcs12 -export -in certificates.crt  -out certificate.pfx
+openssl pkcs12 -export -in certificates.crt  -out certificate.pfx -legacy
 ```
 
 
